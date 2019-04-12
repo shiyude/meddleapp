@@ -1,0 +1,79 @@
+body{
+  .addFilePop{
+    background-color: transparent;
+    .addFilePop_box{
+      // height: 50vh !important;
+      bottom: 2vh;
+      .addFilePop_box_div{
+        width: 95%;
+        background-color: transparent;
+        height:100%;
+        margin:0 auto;
+        border-radius:5px;
+        padding-top:10px;
+        .addFilePop_box_div_top{
+          height: 45vh;;
+          padding-top: 1vh;
+          background-color: #fff;
+          border-radius: 1.5vh;
+          .weui-cell{
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-left: 7vh;
+            .vux-checklist-icon-checked:before{
+              color: #5160f1;
+            }
+            .weui-cell__bd{
+              width: 70%;
+              p{
+                width: 100%;
+                font-size: 1.6vh;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              span{
+                width: 100%;
+                font-size: 1.2vh;
+                display: block;
+                color: #999;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+          .weui-cell:after{
+            content: "";
+            position: absolute;
+            width: 3vh;
+            height: 3vh;
+            top: 50%;
+            margin-top: -1.5vh;
+            left: 2vh;;
+            background: url('../assets/images/icon/file_icon.png') no-repeat 0 0;
+            background-size: 100% 100%;
+          }
+        }
+        .addFilePop_box_div_bom{
+          margin-top: 2vh;
+          .weui-btn{
+            border-radius: 1.5vh;
+            color: #5160f1;
+            font-size: 2vh;
+            height: 5vh;
+          }
+        }
+        .weui-cells:before{
+          display: none;
+        }
+        .weui-cells:after{
+          display: none;
+        }
+        .weui-cell:before{
+          display: none;
+        }
+      }
+    }
+  }
+}

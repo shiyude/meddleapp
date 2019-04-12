@@ -1,0 +1,82 @@
+.nav_head.vux-header {
+  height: 80px;
+  padding: 0 0;
+  top: 0;
+  width: 100%;
+  background: -moz-linear-gradient(left, #49ccfa 0%, #5160f1 100%) !important;
+  background: -webkit-linear-gradient(
+    left,
+    #49ccfa 0%,
+    #5160f1 100%
+  ) !important;
+  background: -o-linear-gradient(left, #49ccfa 0%, #5160f1 100%) !important;
+  background: -ms-linear-gradient(left, #49ccfa 0%, #5160f1 100%) !important;
+  background: linear-gradient(to right, #49ccfa 0%, #5160f1 100%) !important;
+  .vux-header-left {
+    top: 40px;
+    color: #fff;
+    a{
+      color: #fff;
+    }
+    .left-arrow:before{
+      border: 1px solid #fff;
+      border-width: 1px 0 0 1px;
+      -webkit-transform: rotate(315deg);
+      transform: rotate(315deg);
+    }
+  }
+  .vux-header-right{
+    top: 40px;
+    color: #fff;
+  }
+  .vux-header-title {
+    padding-top: 30px;
+    // font-size: 1.5vh;
+  }
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.PdfDiv{
+  .weui-cells{
+    margin-top: 0;
+    .weui-label{
+      margin: 0;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 20em !important;
+    }
+  }
+  .pdfDivContent{
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+  }
+  @media screen and (max-width: 320px) {
+    .weui-cells{
+      .weui-label{ 
+        width: 15em !important;
+      }
+    }
+  }
+}
+.nav_head{
+  height: 80px;
+}
+.vux-loading .weui-toast {
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin-left:0;
+}
+.pswp__ui{
+  .pswp__top-bar{
+    top: 40px;
+    // display: none;
+  }
+}
